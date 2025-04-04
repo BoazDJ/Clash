@@ -21,11 +21,11 @@ pr:
     proxies:
       [
         节点选择,
-        香港,
-        台湾,
         日本,
-        新加坡,
         美国,
+        香港,
+        新加坡,
+        台湾,
         其它地区,
         全部节点,
         自动选择,
@@ -77,7 +77,7 @@ proxy-providers:
   订阅一:
     <<: *p
     # path: ./proxy_provider/订阅一.yaml
-    url: "https://example.com/airport?type=clashmeta&protocol=shadowsocks&rule=default"
+    # url: "https://example.com/airport?type=clashmeta&protocol=shadowsocks&rule=default"
     # 如需要为该订阅组节点添加前缀，取消下面两行注释
     # override:
       # additional-prefix: "[订阅一]"
@@ -85,7 +85,7 @@ proxy-providers:
   订阅二:
     <<: *p
     # path: ./proxy_provider/订阅二.yaml
-    url: "https://example.com/api/v1/client/subscribe?token=ilovechina"
+    # url: "https://example.com/api/v1/client/subscribe?token=ilovechina"
     # 如需要为该订阅组节点添加前缀，取消下面两行注释
     # override:
       # additional-prefix: "[订阅二]"
@@ -267,7 +267,7 @@ proxy-groups:
       name: 节点选择,
       type: select,
       proxies:
-        [全部节点, 自动选择, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, DIRECT],
+        [全部节点, 自动选择, 日本, 美国, 香港, 新加坡, 其它地区, DIRECT],
     }
   # 这里的 dns 指海外解析 dns 走的节点，一般跟随节点选择即可
   - { name: dns, <<: *pr }
