@@ -108,7 +108,7 @@ dns:
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 pr: &pr {type: select, proxies: [Proxy, JP, HK, SG,US, DIRECT] }
 proxy-groups:
-  - {name: Proxy, type: select, proxies: [JP, HK, SG,US, DIRECT], include-all: true, filter: "^((?!(DIRECT)).)*$"}
+  - {name: Proxy, type: select, proxies: [JP, HK, SG,US], include-all: true, filter: "^((?!(DIRECT)).)*$"}
   - {name: YouTube, <<: *pr}
   - {name: Google, <<: *pr}
   - {name: ChatGPT, <<: *pr}
