@@ -10,15 +10,6 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: DIRECT
-  AIFUN:
-    url: "AIFUN"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: DIRECT 
 
 # 全局配置 
 port: 7890
