@@ -1,3 +1,10 @@
+# 手动规则: 以下规则优先级最高 不参与规则数量统计
+DOMAIN,gm.yezi.my
+DOMAIN,p.jisuts.com,DIRECT // Added for: p.jisuts.com:999
+
+# 更新时间: 2025/10/23 13:34:16
+# 规则数量：当前共 247 条规则
+
 DOMAIN,360zy.com
 DOMAIN,admin-oss-xlvip.a.88cdn.com
 DOMAIN,alogs.umengcloud.com
@@ -50,6 +57,7 @@ DOMAIN,tkotjdbr.z1cdn.com
 DOMAIN,tyejwatd.z1cdn.com
 DOMAIN,ulogs.umengcloud.com
 DOMAIN,vapp.tmuyun.com
+DOMAIN,vres.dsty6.com // Added for: vres.dsty6.com:443
 DOMAIN,wbzbksie.z1cdn.com
 DOMAIN,whpqscwx.z1cdn.com
 DOMAIN,www.yunwuee.icu
@@ -60,9 +68,12 @@ DOMAIN,yiso.fun
 DOMAIN,ywsxokgm.z1cdn.com
 DOMAIN-SUFFIX,0kkkkkt.com
 DOMAIN-SUFFIX,1rtb.net
+DOMAIN-SUFFIX,2925.com
+DOMAIN-SUFFIX,2980.com
 DOMAIN-SUFFIX,2xvd33x.com
 DOMAIN-SUFFIX,300hu.com
 DOMAIN-SUFFIX,360kan.com
+DOMAIN-SUFFIX,365yg.com
 DOMAIN-SUFFIX,5ddd.com
 DOMAIN-SUFFIX,5jingcai.com
 DOMAIN-SUFFIX,666291.xyz
@@ -72,9 +83,11 @@ DOMAIN-SUFFIX,99gy.top
 DOMAIN-SUFFIX,adfunlink.com
 DOMAIN-SUFFIX,adkwai.com
 DOMAIN-SUFFIX,advlion.com
+DOMAIN-SUFFIX,aiclk.com
 DOMAIN-SUFFIX,ailbaba.me
 DOMAIN-SUFFIX,aiyohoo.com
 DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,appcloudcdn.com
 DOMAIN-SUFFIX,avgnatii.com
 DOMAIN-SUFFIX,bankcomm.com
 DOMAIN-SUFFIX,bbfun.cc:443
@@ -91,6 +104,7 @@ DOMAIN-SUFFIX,bytetos.com
 DOMAIN-SUFFIX,chaojichaojichanga.com
 DOMAIN-SUFFIX,chenluo.org
 DOMAIN-SUFFIX,cjjd14.com
+DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,csvw.com
 DOMAIN-SUFFIX,ctobsnssdk.com
 DOMAIN-SUFFIX,cycback.org
@@ -102,6 +116,7 @@ DOMAIN-SUFFIX,doupay.com
 DOMAIN-SUFFIX,douyinmusicpromotion.com
 DOMAIN-SUFFIX,douyinvod.com
 DOMAIN-SUFFIX,du88.cc
+DOMAIN-SUFFIX,duoyi.com
 DOMAIN-SUFFIX,dushe.co
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,dxhjx.com
@@ -118,6 +133,8 @@ DOMAIN-SUFFIX,fannaz.top
 DOMAIN-SUFFIX,ffzyapi.com
 DOMAIN-SUFFIX,fnnas.com
 DOMAIN-SUFFIX,fotile.com
+DOMAIN-SUFFIX,gameley.com
+DOMAIN-SUFFIX,geekbang.org
 DOMAIN-SUFFIX,globalsign.com
 DOMAIN-SUFFIX,gugu3.com
 DOMAIN-SUFFIX,gzbaoxian.com
@@ -126,7 +143,10 @@ DOMAIN-SUFFIX,hkybqufgh.com
 DOMAIN-SUFFIX,hls.one
 DOMAIN-SUFFIX,idouyinvod.com
 DOMAIN-SUFFIX,ietheivaicai.com
+DOMAIN-SUFFIX,ipv4dns.com
+DOMAIN-SUFFIX,irouteros.com
 DOMAIN-SUFFIX,izuiyou.com
+DOMAIN-SUFFIX,jdcloud-oss.com
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN-SUFFIX,jlzj.xyz
 DOMAIN-SUFFIX,jzcbed.xyz
@@ -134,6 +154,8 @@ DOMAIN-SUFFIX,keke15.com
 DOMAIN-SUFFIX,kekedy.me
 DOMAIN-SUFFIX,kemfsj.com
 DOMAIN-SUFFIX,km2kys.icu
+DOMAIN-SUFFIX,kugou.com/v2/gen?sign=32bfd76ba8b88887b1ad16a876790ac1&appid=3114&s=AQ%2BM04oXcvq2YdZ%2B9GUv62A%2FWC9TCI2HG4%2F%2BxfSrnHYbyWum7pzzWmyM5tEAD7twspJtWne2Poo5k8TjKpoG84KnY0JtVrg2bBivAS1EBBs5tlqet2oq3p%2FG4yhv%2BrSSl88GMGs31cXhXy9RDsiu1wkyIEp%2BRp93kgebsDcQT%2Bk%3D&_t=1752405305
+DOMAIN-SUFFIX,kugou.com/v2/gen?sign=eab7f2b79032be0f27d959f9155a8461&appid=3114&s=OUyTOECxtFzsl4y9yRlW%2BPjAn9gjFXl9iC9YiQUnibPMUz0AfP7DWUvDBorLcY5tgrdSfmkIryxz%2BxF8Yqn%2BDsLtV8NsIZKfDLmUNpqY%2FhnBBhSfIBAi60gcXYLXNWXW%2BTz698pu9a0wc2ReXifplE4e8xUJ0A5fateE0Wh%2FqjU%3D&_t=1752405355
 DOMAIN-SUFFIX,kuiniuca.com
 DOMAIN-SUFFIX,kvod10.com
 DOMAIN-SUFFIX,kvod14.com
@@ -145,10 +167,13 @@ DOMAIN-SUFFIX,kvod8.com
 DOMAIN-SUFFIX,landrop.app
 DOMAIN-SUFFIX,liego.so
 DOMAIN-SUFFIX,lziapi.com
+DOMAIN-SUFFIX,manmanbuy.com
 DOMAIN-SUFFIX,mb3admin.com
 DOMAIN-SUFFIX,mcydh.com
+DOMAIN-SUFFIX,mediav.com
 DOMAIN-SUFFIX,medproad.com
 DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,meituan.net:443
 DOMAIN-SUFFIX,mentamob.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,mitotv.com
@@ -158,6 +183,7 @@ DOMAIN-SUFFIX,mxbc.net
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,ndcpp.com
 DOMAIN-SUFFIX,ndcppx.com
+DOMAIN-SUFFIX,okaapps.com
 DOMAIN-SUFFIX,omwjhz.com
 DOMAIN-SUFFIX,onethingpcs.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
@@ -177,6 +203,7 @@ DOMAIN-SUFFIX,rryms.cc
 DOMAIN-SUFFIX,rycjapi.com
 DOMAIN-SUFFIX,sanhao1.vip
 DOMAIN-SUFFIX,sealaly.net
+DOMAIN-SUFFIX,sealaly.net:10443
 DOMAIN-SUFFIX,searchpstatp.com
 DOMAIN-SUFFIX,sf-express.com
 DOMAIN-SUFFIX,shuqireader.com
@@ -184,6 +211,7 @@ DOMAIN-SUFFIX,sigmob.cn:443
 DOMAIN-SUFFIX,silisili.cc
 DOMAIN-SUFFIX,siomxity.com
 DOMAIN-SUFFIX,siomxity.net
+DOMAIN-SUFFIX,smtcdns.com
 DOMAIN-SUFFIX,smtcdns.com:443
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,subaibai.com
@@ -192,12 +220,14 @@ DOMAIN-SUFFIX,svw-volkswagen.com
 DOMAIN-SUFFIX,tianwenca.com
 DOMAIN-SUFFIX,tongyi.com
 DOMAIN-SUFFIX,tuxiaobei.com
+DOMAIN-SUFFIX,txrjy.com
 DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,ucweb.com
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,umeng.com:443
 DOMAIN-SUFFIX,umsns.com
 DOMAIN-SUFFIX,vegslb.com
+DOMAIN-SUFFIX,volcsiriusbd.com
 DOMAIN-SUFFIX,whjzjx.cn:443
 DOMAIN-SUFFIX,wmys.me
 DOMAIN-SUFFIX,wogg.lol
@@ -217,5 +247,8 @@ DOMAIN-SUFFIX,yuchengyouxi.com
 DOMAIN-SUFFIX,yydsys.top
 DOMAIN-SUFFIX,yzys.top
 DOMAIN-SUFFIX,yzzy-api.com
+DOMAIN-SUFFIX,z1cdn.com
 DOMAIN-SUFFIX,zeehoev.com
 DOMAIN-SUFFIX,zuebr.com
+IP-CIDR,103.212.99.243/32 // Added for: 103.212.99.243:51020
+IP-CIDR,16.162.53.229/32 // Added for: 16.162.53.229:6010
