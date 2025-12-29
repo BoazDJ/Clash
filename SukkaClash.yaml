@@ -89,7 +89,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 订阅合集
 proxy-providers:
   Node-1:
-    url: 'https://gist.githubusercontent.com/BoazDJ/ebc26f6752889437ff2170671827fcca/raw/VPN'
+    url: 'VPN'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
     override:
