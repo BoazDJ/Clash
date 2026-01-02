@@ -113,14 +113,14 @@ Auto: &Auto {type: url-test, url: 'http://connectivitycheck.platform.hicloud.com
 # 策略组
 proxy-groups:
   # 主选择组
-  - {name: Proxy, type: select, proxies: [🇯🇵 - JP, 🇭🇰 - HK, 🇸🇬 - SG, 🇺🇸 - US, AllIn - 自动选择], include-all: true, filter: "^((?!(DIRECT)).)*$"}
+  - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, AllIn - 自动选择], include-all: true, filter: "^((?!(DIRECT)).)*$"}
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
 
    # 应用分组
-  - {name: Telegram, type: select, proxies: [Proxy, 🇭🇰 - HK, 🇯🇵 - JP, 🇸🇬 - SG, 🇺🇸 - US]}
-  - {name: AIGC, type: select, proxies: [🇺🇸 - US, Proxy, 🇭🇰 - HK, 🇯🇵 - JP, 🇸🇬 - SG]}
-  - {name: Apple, type: select, proxies: [DIRECT, Proxy, 🇭🇰 - HK, 🇺🇸 - US]}
-  - {name: Microsoft, type: select, proxies: [DIRECT, Proxy, 🇭🇰 - HK, 🇺🇸 - US]}
+  - {name: Telegram, type: select, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: AIGC, type: select, proxies: [🇺🇸 US, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
+  - {name: Apple, type: select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Microsoft, type: select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
 
   # 自动选择 - 按地区
   - {name: 🇯🇵 JP, <<: *Auto, filter: *FilterJP}
