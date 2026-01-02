@@ -123,10 +123,10 @@ proxy-groups:
   - {name: Microsoft, type: select, proxies: [DIRECT, Proxy, 🇭🇰 - HK, 🇺🇸 - US]}
 
   # 自动选择 - 按地区
-  - {name: 🇯🇵 - JP, <<: *Auto, filter: *FilterJP}
-  - {name: 🇭🇰 - HK, <<: *Auto, filter: *FilterHK}
-  - {name: 🇸🇬 - SG, <<: *Auto, filter: *FilterSG}
-  - {name: 🇺🇸 - US, <<: *Auto, filter: *FilterUS}
+  - {name: 🇯🇵 JP, <<: *Auto, filter: *FilterJP}
+  - {name: 🇭🇰 HK, <<: *Auto, filter: *FilterHK}
+  - {name: 🇸🇬 SG, <<: *Auto, filter: *FilterSG}
+  - {name: 🇺🇸 US, <<: *Auto, filter: *FilterUS}
 
   # 全部节点
   - {name: AllIn - 自动选择, <<: *Auto, filter: *FilterAll}
