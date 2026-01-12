@@ -262,6 +262,16 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
     path: ./rule_set/sukkaw_ruleset/global_non_ip.txt
     
+  Proxy2:
+    <<: *RuleSet_classical  
+    url: https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs
+    path: ./rule_set/sukkaw_ruleset/Proxy2.mrs
+    
+  China2:
+    <<: *RuleSet_classical
+    url: https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs
+    path: ./rule_set/sukkaw_ruleset/China2.mrs
+   
   domestic_ip:
     <<: *RuleSet_classical
     url: https://ruleset.skk.moe/Clash/ip/domestic.txt
@@ -292,9 +302,13 @@ rules:
   - RULE-SET,microsoft_non_ip,Microsoft
   - RULE-SET,ai_non_ip,AIGC
   - RULE-SET,global_non_ip,Proxy
+  - RULE-SET,Proxy,Proxy
+  - RULE-SET,China,DIRECT
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
+  - RULE-SET,Proxy2,Proxy
+  - RULE-SET,China2,DIRECT
 
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
