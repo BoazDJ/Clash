@@ -282,6 +282,16 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/ip/china_ip.txt
     path: ./rule_set/sukkaw_ruleset/china_ip.txt
 
+  ProxyIP:
+    <<: *RuleSet_ipcidr
+    url: https://github.com/666OS/rules/raw/release/mihomo/ip/Proxy.mrs
+    path: ./rule_set/sukkaw_ruleset/ProxyIP.mrs
+    
+  ChinaIP:
+    <<: *RuleSet_ipcidr
+    url: https://github.com/666OS/rules/raw/release/mihomo/ip/China.mrs
+    path: ./rule_set/sukkaw_ruleset/China.mrs
+    
 # 分流规则
 rules:
   ### 非 IP 类规则
@@ -315,4 +325,6 @@ rules:
   - RULE-SET,lan_ip,DIRECT
   - RULE-SET,domestic_ip,DIRECT
   - RULE-SET,china_ip,DIRECT
+  - RULE-SET,ProxyIP,Proxy,no-resolve
+  - RULE-SET,ChinaIP,DIRECT,no-resolve  
   - MATCH,Final
