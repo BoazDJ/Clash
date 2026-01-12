@@ -302,8 +302,6 @@ rules:
   - RULE-SET,microsoft_non_ip,Microsoft
   - RULE-SET,ai_non_ip,AIGC
   - RULE-SET,global_non_ip,Proxy
-  - RULE-SET,Proxy,Proxy
-  - RULE-SET,China,DIRECT
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
