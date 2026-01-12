@@ -324,7 +324,7 @@ rules:
   - RULE-SET,stream_ip,Proxy
   - RULE-SET,lan_ip,DIRECT
   - RULE-SET,domestic_ip,DIRECT
-  - RULE-SET,china_ip,DIRECT
+  - RULE-SET,china_ip,DIRECT,no-resolve
   - RULE-SET,ProxyIP,Proxy,no-resolve
   - RULE-SET,ChinaIP,DIRECT,no-resolve  
   - MATCH,Final
