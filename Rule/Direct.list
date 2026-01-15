@@ -1,8 +1,9 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
+DOMAIN,dytt-cinema.com
 DOMAIN,gm.yezi.my
 DOMAIN,p.jisuts.com,DIRECT // Added for: p.jisuts.com:999
 
-# 更新时间: 2026/1/15 09:35:26
+# 更新时间: 2026/1/15 11:46:24
 # 规则数量：当前共 247 条规则
 
 DOMAIN,360zy.com
