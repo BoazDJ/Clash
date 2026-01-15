@@ -299,7 +299,7 @@ rules:
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
-  - RULE-SET,Direct.list,DIRECT
+  - RULE-SET,Direct,DIRECT
   
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
