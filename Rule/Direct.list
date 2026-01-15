@@ -1,5 +1,6 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
 DOMAIN,vip.dytt-cinema.com
+DOMAIN,vip.dytt-video.com
 DOMAIN,gm.yezi.my
 DOMAIN,p.jisuts.com
 
