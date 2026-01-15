@@ -260,6 +260,11 @@ rule-providers:
     <<: *RuleSet_classical
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
     path: ./rule_set/sukkaw_ruleset/global_non_ip.txt
+
+  Direct:
+    <<: *RuleSet_classical
+    url: https://raw.githubusercontent.com/BoazDJ/Clash/refs/heads/main/Rule/Direct.list
+    path: ./rule_set/sukkaw_ruleset/Direct.list
      
   domestic_ip:
     <<: *RuleSet_classical
@@ -294,7 +299,8 @@ rules:
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
-
+  - RULE-SET,Direct.list,DIRECT
+  
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
   - RULE-SET,telegram_ip,Telegram
