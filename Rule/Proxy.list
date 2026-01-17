@@ -1,8 +1,8 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
 
 
-# 更新时间: 2025/10/23 13:34:16
-# 规则数量：当前共 100 条规则
+# 更新时间: 2026/1/15 11:46:24
+# 规则数量：当前共 99 条规则
 
 DOMAIN,apple.imap.mail.yahoo.com
 DOMAIN,apple.smtp.mail.yahoo.com
@@ -22,7 +22,6 @@ DOMAIN,squareup.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,233boy.com
 DOMAIN-SUFFIX,588511.xyz
-DOMAIN-SUFFIX,66tutup.com
 DOMAIN-SUFFIX,6sc.co
 DOMAIN-SUFFIX,876519.xyz
 DOMAIN-SUFFIX,87ye.com
@@ -98,9 +97,9 @@ DOMAIN-SUFFIX,xiaoqiang2.com
 DOMAIN-SUFFIX,zdbb.net
 DOMAIN-SUFFIX,zhih.me
 DOMAIN-SUFFIX,zijieapi.com
-IP-CIDR,1.1.1.0/24,no-resolve
-IP-CIDR,119.161.102.0/24,no-resolve
-IP-CIDR,142.91.104.0/23,no-resolve
-IP-CIDR,17.253.114.0/23,no-resolve
-IP-CIDR,17.253.116.0/23,no-resolve
-IP-CIDR,5.28.192.0/18,no-resolve
+IP-CIDR,1.1.1.0/24
+IP-CIDR,119.161.102.0/24
+IP-CIDR,142.91.104.0/23
+IP-CIDR,17.253.114.0/23
+IP-CIDR,17.253.116.0/23
+IP-CIDR,5.28.192.0/18
