@@ -1,16 +1,15 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
-# 手动规则: 以下规则优先级最高 不参与规则数量统计
+DOMAIN,999.ts1110.top
+DOMAIN,dy.588511.xyz
+DOMAIN,s3.v2rayse.com
 DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,iturrit.com
 DOMAIN-SUFFIX,skk.moe
 DOMAIN-SUFFIX,surge.tel
-DOMAIN-SUFFIX,iturrit.com
+DOMAIN-SUFFIX,ts1110.top
 DOMAIN-SUFFIX,v1999.sbs
-DOMAIN-SUFFIX,hotmail.com
-DOMAIN,999.ts1110.top 
-DOMAIN-SUFFIX,ts1110.top 
-DOMAIN,s3.v2rayse.com 
-DOMAIN-SUFFIX,surge.tel
-DOMAIN,dy.588511.xyz 
 IP-CIDR,17.57.145.152,no-resolve
-# 更新时间: 2026/1/15 11:46:24
-# 规则数量：当前共 99 条规则
+
+# 更新时间: 2026/1/18 20:07:22
+# 规则数量：当前共 0 条规则
