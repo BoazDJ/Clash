@@ -261,7 +261,7 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/global.txt
     path: ./rule_set/sukkaw_ruleset/global_non_ip.txt
 
-  Direct:
+  Proxy:
     <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/BoazDJ/Clash/refs/heads/main/Rule/Proxy.list
     path: ./rule_set/sukkaw_ruleset/Proxy.list
