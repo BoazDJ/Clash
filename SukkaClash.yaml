@@ -112,11 +112,11 @@ Auto: &Auto {type: url-test, url: 'http://connectivitycheck.platform.hicloud.com
 # 策略组
 proxy-groups:
   # 主选择组
-  - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US]}
+  - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, AllIn - 手动选择]}
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
 
    # 应用分组
-  - {name: Telegram, type: select, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Telegram, type: select, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: AIGC, type: select, proxies: [🇺🇸 US, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
   - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
@@ -129,7 +129,7 @@ proxy-groups:
 
   # 全部节点
   # - {name: All-Select, <<: *Select, filter: *FilterAll}
-
+  - {name: AllIn - 手动选择, <<: *Select, filter: *FilterAll}
 
 ### 规则配置
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: Proxy}
