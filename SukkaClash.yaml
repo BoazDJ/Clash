@@ -88,7 +88,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 订阅合集
 proxy-providers:
   Node-1:
-    url: 'VPN'
+    url: 'https://raw.githubusercontent.com/WeiGiegie/vpm/main/lq.snippet'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
     override:
