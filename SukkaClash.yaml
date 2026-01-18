@@ -118,8 +118,8 @@ proxy-groups:
    # 应用分组
   - {name: Telegram, type: select, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: AIGC, type: select, proxies: [🇺🇸 US, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
-  - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Apple, type: select, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Microsoft, type: select, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
 
   # 自动选择 - 按地区
   - {name: 🇯🇵 JP, <<: *Auto, filter: *FilterJP}
