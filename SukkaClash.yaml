@@ -128,7 +128,7 @@ proxy-groups:
   - {name: 🇺🇸 US, <<: *Auto, filter: *FilterUS}
 
   # 全部节点
-  - {name: All-Select,  type: select, filter: *FilterAll}
+  - {name: All-Select, <<: *Select, filter: *FilterAll}
 
 
 ### 规则配置
