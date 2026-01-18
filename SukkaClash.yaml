@@ -263,6 +263,11 @@ rule-providers:
 
   Direct:
     <<: *RuleSet_classical
+    url: https://raw.githubusercontent.com/BoazDJ/Clash/refs/heads/main/Rule/Proxy.list
+    path: ./rule_set/sukkaw_ruleset/Proxy.list
+    
+  Direct:
+    <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/BoazDJ/Clash/refs/heads/main/Rule/Direct.list
     path: ./rule_set/sukkaw_ruleset/Direct.list
      
@@ -298,8 +303,9 @@ rules:
   - RULE-SET,global_non_ip,Proxy
   - RULE-SET,domestic_non_ip,DIRECT
   - RULE-SET,direct_non_ip,DIRECT
-  - RULE-SET,lan_non_ip,DIRECT
+  - RULE-SET,Proxy,Proxy
   - RULE-SET,Direct,DIRECT
+  - RULE-SET,lan_non_ip,DIRECT
   
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
