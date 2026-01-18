@@ -87,7 +87,7 @@ tun:
 NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}}
 # 订阅合集
 proxy-providers:
-  Node-1:
+  VPN:
     url: 'https://api.linkedton.com/api/v1/client/subscribe?token=86be8556f990b650ad8bc616988193fd'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
@@ -112,7 +112,7 @@ Auto: &Auto {type: url-test, url: 'http://connectivitycheck.platform.hicloud.com
 # 策略组
 proxy-groups:
   # 主选择组
-  - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, AllIn - 自动选择], include-all: true, filter: "^((?!(DIRECT)).)*$"}
+  - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US, All-Select]}
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
 
    # 应用分组
@@ -128,7 +128,7 @@ proxy-groups:
   - {name: 🇺🇸 US, <<: *Auto, filter: *FilterUS}
 
   # 全部节点
-  - {name: AllIn - 自动选择, <<: *Auto, filter: *FilterAll}
+  - {name: All-Select,  type: select, filter: *FilterAll}
 
 
 ### 规则配置
