@@ -52,53 +52,53 @@ dns:
     - https://doh.pub/dns-query
   fake-ip-filter:
   # ===== 局域网 & 本地 =====
-  - "+.+lan"
-  - "+.+local"
-  - "+.+localdomain"
-  - "+.home.arpa"
-  - "+.+in-addr.arpa"
-  - "+.+ip6.arpa"
+    - "+.+lan"
+    - "+.+local"
+    - "+.+localdomain"
+    - "+.home.arpa"
+    - "+.+in-addr.arpa"
+    - "+.+ip6.arpa"
 
   # ===== 国内智能设备 / IoT =====
-  - "+.mi.com"
-  - "+.xiaomi.com"
-  - "+.miwifi.com"
-  - "+.mijia.tech"
-  - "+.iot.mi.com"
-  - "+.aliyun.com"
-  - "+.alibaba.com"
-  - "+.alicdn.com"
-  - "+.mmstat.com"
+    - "+.mi.com"
+    - "+.xiaomi.com"
+    - "+.miwifi.com"
+    - "+.mijia.tech"
+    - "+.iot.mi.com"
+    - "+.aliyun.com"
+    - "+.alibaba.com"
+    - "+.alicdn.com"
+    - "+.mmstat.com"
 
   # ===== Apple / 系统服务 =====
-  - "+.push.apple.com"
-  - "+.icloud.com"
-  - "+.icloud-content.com"
-  - "time.apple.com"
-  - "time.*.apple.com"
+    - "+.push.apple.com"
+    - "+.icloud.com"
+    - "+.icloud-content.com"
+    - "time.apple.com"
+    - "time.*.apple.com"
 
   # ===== 游戏 / 联机 / NAT =====
-  - "*.srv.nintendo.net"
-  - "*.stun.playstation.net"
-  - "xbox.*.microsoft.com"
-  - "*.xboxlive.com"
-  - "*.stun.*"
-  - "*.turn.*"
+    - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
+    - "xbox.*.microsoft.com"
+    - "*.xboxlive.com"
+    - "*.stun.*"
+    - "*.turn.*"
 
   # ===== 办公 / 企业网络常见 =====
-  - "dns.msftncsi.com"
-  - "www.msftconnecttest.com"
-  - "connectivitycheck.gstatic.com"
-  - "captive.apple.com"
+    - "dns.msftncsi.com"
+    - "www.msftconnecttest.com"
+    - "connectivitycheck.gstatic.com"
+    - "captive.apple.com"
 
   # ===== Docker / 本地开发 / NAS =====
-  - "+.docker.io"
-  - "+.docker.com"
-  - "+.registry-1.docker.io"
-  - "+.localstack.cloud"
+    - "+.docker.io"
+    - "+.docker.com"
+    - "+.registry-1.docker.io"
+    - "+.localstack.cloud"
 
   # ===== P2P / 设备发现 =====
-  - "stun.syncthing.net"
+    - "stun.syncthing.net"
 
 profile:
   store-selected: true
