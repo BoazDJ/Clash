@@ -51,7 +51,6 @@ dns:
     - https://223.5.5.5/dns-query
     - https://doh.pub/dns-query
   fake-ip-filter:
- fake-ip-filter:
   # ===== 局域网 & 本地 =====
   - "+.+lan"
   - "+.+local"
@@ -99,7 +98,7 @@ dns:
   - "+.localstack.cloud"
 
   # ===== P2P / 设备发现 =====
-  - "stun.syncthing.net"io"
+  - "stun.syncthing.net"
 
 profile:
   store-selected: true
