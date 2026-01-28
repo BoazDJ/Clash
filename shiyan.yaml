@@ -35,7 +35,7 @@ tun:
     - any:53
     - tcp://any:53
   strict-route: true
-  mtu: 1942
+  mtu: 1492
 
 dns:
   enable: true
