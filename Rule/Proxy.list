@@ -1,11 +1,11 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
 DOMAIN,999.ts1110.top
 DOMAIN,dy.588511.xyz
-DOMAIN,ipify.org
 DOMAIN,s3.v2rayse.com
 DOMAIN-SUFFIX,etcbbe.xyz
 DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,hotmail.com
+DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,iturrit.com
 DOMAIN-SUFFIX,skk.moe
 DOMAIN-SUFFIX,small1999.sbs
@@ -14,6 +14,6 @@ DOMAIN-SUFFIX,ts1110.top
 DOMAIN-SUFFIX,v1999.sbs
 IP-CIDR,17.57.145.152,no-resolve
 
-# 更新时间: 2026/1/27 11:28:57
+# 更新时间: 2026/1/28 15:41:47
 # 规则数量：当前共 0 条规则
 
