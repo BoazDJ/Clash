@@ -33,7 +33,9 @@ tun:
   auto-detect-interface: true
   dns-hijack:
     - any:53
+    - tcp://any:53
   strict-route: true
+  mtu: 1500
 
 dns:
   enable: true
@@ -41,7 +43,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   respect-rules: true
-  prefer-h3: false
+  prefer-h3: true
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
