@@ -1,3 +1,4 @@
+# 基础配置
 mode: rule
 allow-lan: true
 mixed-port: 7893
