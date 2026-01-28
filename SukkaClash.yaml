@@ -129,9 +129,6 @@ proxy-groups:
   - {name: 🇸🇬 SG, <<: *Auto, filter: *FilterSG}
   - {name: 🇺🇸 US, <<: *Select, filter: *FilterUS}
   - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
-
-  # 全部节点
-  # - {name: AllIn - Select, <<: *Select, filter: *FilterAll}
   
   #兜底
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
