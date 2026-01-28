@@ -126,9 +126,9 @@ proxy-groups:
   
   # 自动选择 - 按地区
   - {name: 🇯🇵 JP, <<: *Auto, filter: *FilterJP}
-  - {name: 🇭🇰 HK, <<: *Auto, filter: *FilterHK}
   - {name: 🇸🇬 SG, <<: *Auto, filter: *FilterSG}
-  - {name: 🇺🇸 US, <<: *Auto, filter: *FilterUS}
+  - {name: 🇺🇸 US, <<: *Select, filter: *FilterUS}
+  - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
 
   # 全部节点
   - {name: AllIn - Select, <<: *Select, filter: *FilterAll}
