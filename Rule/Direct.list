@@ -5,8 +5,8 @@ DOMAIN,vip.dytt-cinema.com
 DOMAIN,vip.dytt-video.com
 DOMAIN-KEYWORD,vip.dytt-
 
-# 更新时间: 2026/1/24 09:32:12
-# 规则数量：当前共 248 条规则
+# 更新时间: 2026/1/28 15:41:47
+# 规则数量：当前共 250 条规则
 
 DOMAIN,360zy.com
 DOMAIN,admin-oss-xlvip.a.88cdn.com
@@ -154,6 +154,7 @@ DOMAIN-SUFFIX,jdcloud-oss.com
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN-SUFFIX,jlzj.xyz
 DOMAIN-SUFFIX,jzcbed.xyz
+DOMAIN-SUFFIX,keeflys.com:443
 DOMAIN-SUFFIX,keke15.com
 DOMAIN-SUFFIX,kekedy.me
 DOMAIN-SUFFIX,kemfsj.com
@@ -217,6 +218,7 @@ DOMAIN-SUFFIX,siomxity.com
 DOMAIN-SUFFIX,siomxity.net
 DOMAIN-SUFFIX,smtcdns.com
 DOMAIN-SUFFIX,smtcdns.com:443
+DOMAIN-SUFFIX,store/file159/4004d4709fc6_0.ts
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,subaibai.com
 DOMAIN-SUFFIX,sunovarain.top
@@ -254,5 +256,8 @@ DOMAIN-SUFFIX,yzzy-api.com
 DOMAIN-SUFFIX,z1cdn.com
 DOMAIN-SUFFIX,zeehoev.com
 DOMAIN-SUFFIX,zuebr.com
-IP-CIDR,103.212.99.243/32
-IP-CIDR,16.162.53.229/32
+IP-CIDR,103.212.99.243/32,no-resolve
+IP-CIDR,16.162.53.229/32,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,192.168.1.0/16,no-resolve
+IP-CIDR,192.168.6.0/16,no-resolve
