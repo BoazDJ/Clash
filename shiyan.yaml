@@ -1,12 +1,15 @@
 # 基础配置
 mode: rule
 allow-lan: true
+port: 7890
 mixed-port: 7893
 bind-address: "*"
 log-level: warning
 ipv6: false
 unified-delay: true
 tcp-concurrent: true
+keep-alive-idle: 600
+keep-alive-interval: 15
 global-client-fingerprint: chrome
 
 sniffer:
