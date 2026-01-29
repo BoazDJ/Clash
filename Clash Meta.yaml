@@ -1,5 +1,13 @@
+# AFF
+# 如果你想支持我，可以通过我的邀请链接购买机场
+# 感谢支持
+# 1. ssLinks 邀请码: fSo2OhzH https://98a6251b6cd7471da86cca993b6dbe6f.36d.biz/#/register?code=fSo2OhzH
+# 2. 一元机场 邀请码: r3f1duds https://xn--4gq62f52gdss.top/#/register?code=r3f1duds
+
+# 一定要填我的邀请码，不填我哭给你看😭
+
 # mihomo (Clash Meta) 懒人配置
-# 版本 V1.20-250613
+# 版本 V1.23-251221
 # https://gist.github.com/liuran001/5ca84f7def53c70b554d3f765ff86a33
 # https://obdo.cc/meta
 # 作者: 笨蛋ovo (bdovo.cc)
@@ -10,6 +18,11 @@
 # 尽量添加了较为详尽的注释，不理解的地方建议对照 虚空终端 (Clash Meta) Docs 进行理解
 # 虚空终端 (Clash Meta) Docs 地址: https://wiki.metacubex.one
 # 不理解的地方不要乱动，如果你是小白，请按下 `Ctrl + F` 搜索 `基础配置`，只修改此部分
+
+# 推荐使用 https://github.com/vernesong/mihomo/releases 魔改版 Mihomo
+# 支持 Smart 策略组，与 Surge 的 Smart 策略组功能大致相似，可以提供更加稳定的节点自动选择策略
+# 参见 Smart Core 工作原理详解 https://clashparty.org/docs/guide/smart-core-principles
+# 按下 `Ctrl + F` 搜索 `Smart 内核专属设置`
 
 # true 是启用
 # false 是禁用
@@ -55,6 +68,9 @@ p: &p
 # 也可以把分割线以内的内容粘贴到您使用代理工具的「覆写」功能，然后在覆写中进行修改
 # 使用覆写时可以直接将此配置文件作为订阅链接进行订阅
 # https://ghfast.top/https://gist.githubusercontent.com/liuran001/5ca84f7def53c70b554d3f765ff86a33/raw/config.yaml
+# 但我们更建议自行修改配置文件而非进行覆写，自行修改后使用更为稳定
+# 且我们并不会经常性的对配置文件进行改动
+# 你可以在 https://gist.github.com/liuran001/5ca84f7def53c70b554d3f765ff86a33/revisions 查看配置文件改动记录
 
 # 如果你需要使用大于两个机场，在下方 `use` 处添加 `订阅三` （名字可以自己取），然后在 `proxy-providers` 照例添加订阅链接即可
 # 反之，如果你只需要使用一个，那么将 `订阅二` 前添加 `#` 进行注释即可
@@ -62,9 +78,23 @@ p: &p
 # 订阅名，记得修改成自己的
 # 添删订阅在这里和下方订阅链接依葫芦画瓢就行
 use: &use
-  # 如果不希望自动切换请将下面两行注释对调
-  # type: select
+  # 如果不希望自动切换请将 `type: url-test` 更换为 `type: select`
   type: url-test
+  # --- Smart 内核专属设置
+  # 把上面那行 `type` 删掉
+  #type: smart
+  # 下方为 Smart 内核高级设置，如果不懂则不要启用，只切换 `type: smart` 即可
+  # policy-priority: <1 表示更低优先级，>1 表示更高优先级，默认值为 1，匹配规则支持正则表达式和字符串
+  #policy-priority: "Premium:0.9;SG:1.3" 
+  # uselightgbm: 使用 LightGBM 模型预测权重
+  #uselightgbm: false
+  # collectdata: 收集数据用于模型训练
+  #collectdata: false
+  # sample-rate: 数据采集率，可取 0-1 之间的值，默认值为 1
+  #sample-rate: 1
+  # prefer-asn: 节点选择时强制优先查询 ASN，默认值为 false
+  #prefer-asn: true
+  # --- Smart 内核专属设置结束
   use:
     - 订阅一
     - 订阅二
@@ -135,6 +165,17 @@ external-controller: :9090
 
 geodata-mode: true
 
+# --- Smart 内核专属设置（不使用 Smart 内核保持不动即可，切勿启用会导致无法正常启动）
+# 文档: https://github.com/vernesong/OpenClash/releases/tag/mihomo
+# 以下的配置项可以不启用，不启用则使用默认值
+# 启用模型自动更新，默认值为 false
+#lgbm-auto-update: true
+# 模型自动更新间隔，默认值为 72（小时）
+#lgbm-update-interval: 72
+# 模型更新地址
+#lgbm-url: "https://ghfast.top/https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/Model.bin"
+# --- Smart 内核专属设置结束
+
 # Geo 数据库下载地址
 # 源地址 https://github.com/MetaCubeX/meta-rules-dat
 # 可以更换镜像站但不要更换其他数据库，可能导致无法启动
@@ -161,6 +202,11 @@ global-client-fingerprint: random # 随机指纹
 profile:
   store-selected: true
   store-fake-ip: true
+  # --- Smart 内核专属设置
+  # 数据收集文件大小，默认值为 100（MB）
+  # 这个没有启用的必要
+  #smart-collector-size: 100
+  # --- Smart 内核专属设置结束
 
 # 自动同步时间以防止时间不准导致无法正常联网
 ntp:
@@ -340,7 +386,7 @@ rules:
   - RULE-SET,AWAvenue-Ads,广告拦截
 # - GEOSITE,biliintl,哔哩东南亚
 # - GEOSITE,bilibili,哔哩哔哩
-  - GEOSITE,category-ai-chat-!cn,境外AI
+  - GEOSITE,category-scholar-!cn,境外AI
   - GEOSITE,apple,Apple
   - GEOSITE,apple-cn,Apple
   - GEOSITE,ehentai,ehentai
