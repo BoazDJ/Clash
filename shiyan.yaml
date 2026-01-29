@@ -17,8 +17,10 @@ sniffer:
   sniff:
     HTTP:
       ports: [80, 8080-8880]
-      override-destination: false
+      override-destination: true
     TLS:
+      ports: [443, 8443]
+    QUIC:
       ports: [443, 8443]
 
   skip-domain:
