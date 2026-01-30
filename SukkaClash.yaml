@@ -1,7 +1,6 @@
 # 基础配置
 mode: rule
 allow-lan: true
-port: 7890
 mixed-port: 7893
 bind-address: "*"
 log-level: warning
