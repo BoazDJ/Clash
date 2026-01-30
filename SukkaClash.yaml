@@ -19,9 +19,9 @@ sniffer:
       ports: [80, 8080-8880]
       override-destination: true
     TLS:
-      ports: [443, 8443]
+      ports: false
     QUIC:
-      ports: [443, 8443]
+      ports: false
 
   skip-domain:
     - "+.huawei.com"
