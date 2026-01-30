@@ -72,26 +72,22 @@ dns:
     - "+.in-addr.arpa"
     - "+.ip6.arpa"
     - "+.bogon"
-
     # --- 2. 苹果设备专项 (解决推送和联网检测) ---
     - "captive.apple.com"      # 苹果联网检测（必留）
     - "+.push.apple.com"       # 苹果推送服务（必留，解决消息延迟）
     - "time.apple.com"         # 苹果时间同步
     - "+.mask.apple-dns.net"   # 苹果私有中继（防止系统设置报错）
     - "+.mask.icloud.com"      # 苹果私有中继
-
     # --- 3. 华为与安卓环境 ---
     - "connectivitycheck.gstatic.com"      # 安卓联网检测
     - "connectivitycheck.platform.hicloud.com" # 华为设备联网检测
     - "+.dbankcloud.com"      # 华为云/监控相关
     - "+.hicloud.com"
     - "+.huawei.com"
-
     # --- 4. 监控与智能家居 P2P (奥克斯/监控直连) ---
     - "stun.*"
     - "*.stun.*"
     - "stun.l.google.com"
-
     # --- 5. 电脑端常用兼容 ---
     - "localhost.ptlogin2.qq.com"
 
