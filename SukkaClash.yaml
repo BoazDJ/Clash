@@ -139,11 +139,11 @@ proxy-groups:
   - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US]}
 
    # 应用分组
-  - {name: Telegram, type: FallBack, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: AIGC, type: Select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
-  - {name: Apple, type: Select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Microsoft, type: Select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Download, type: Select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Telegram, type: fallBack, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: AIGC, type: select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
+  - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Download, type: select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   
   # 自动选择 - 按地区
   - {name: 🇯🇵 JP, <<: *UrlTest, filter: *FilterJP}
@@ -152,7 +152,7 @@ proxy-groups:
   - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
   
   #兜底
-  - {name: Final, type: Select, proxies: [DIRECT, Proxy]}
+  - {name: Final, type: select, proxies: [DIRECT, Proxy]}
   
 ### 规则配置
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: Proxy}
