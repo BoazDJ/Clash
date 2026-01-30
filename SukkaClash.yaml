@@ -139,7 +139,7 @@ proxy-groups:
   - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US]}
 
    # 应用分组
-  - {name: Telegram, type: fallBack, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Telegram, type: fallback, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: AIGC, type: select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
   - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
