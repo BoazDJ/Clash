@@ -94,6 +94,8 @@ dns:
 
     # --- 5. 电脑端常用兼容 ---
     - "localhost.ptlogin2.qq.com"
+    - '*.qq.com'
+    - '*.wechat.com'
 
 
 
