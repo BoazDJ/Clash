@@ -30,6 +30,10 @@ sniffer:
     - "+.push.apple.com"
     - "+.aliyun.com"
     - "+.alicdn.com"
+    - "+.weixin.qq.com"
+    - "+.wechat.com"
+    - "+.qpic.cn"
+    - "+.qq.com"
 
 tun:
   enable: true
@@ -94,10 +98,6 @@ dns:
 
     # --- 5. 电脑端常用兼容 ---
     - "localhost.ptlogin2.qq.com"
-    - '*.qq.com'
-    - '*.wechat.com'
-
-
 
 ### 订阅基础配置 [每天更新一次订阅节点，每 300 秒一次健康检查]
 NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}}
