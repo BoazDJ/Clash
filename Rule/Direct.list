@@ -4,9 +4,14 @@ DOMAIN,p.jisuts.com
 DOMAIN,vip.dytt-cinema.com
 DOMAIN,vip.dytt-video.com
 DOMAIN-KEYWORD,vip.dytt-
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,weixin.qq.com
+IP-CIDR,182.254.0.0/16,no-resolve
+IP-CIDR,203.205.0.0/16,no-resolve
 
-# 更新时间: 2026/1/28 15:41:47
-# 规则数量：当前共 250 条规则
+# 更新时间: 2026/1/30 17:09:46
+# 规则数量：当前共 255 条规则
 
 DOMAIN,360zy.com
 DOMAIN,admin-oss-xlvip.a.88cdn.com
@@ -256,10 +261,10 @@ DOMAIN-SUFFIX,yzzy-api.com
 DOMAIN-SUFFIX,z1cdn.com
 DOMAIN-SUFFIX,zeehoev.com
 DOMAIN-SUFFIX,zuebr.com
-IP-CIDR,103.212.99.243/32,no-resolve
-IP-CIDR,16.162.53.229/32,no-resolve
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,100.64.0.0/10,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,10.0.0.0/8
+IP-CIDR,100.64.0.0/10
+IP-CIDR,103.212.99.243/32
+IP-CIDR,127.0.0.0/8
+IP-CIDR,16.162.53.229/32
+IP-CIDR,172.16.0.0/12
+IP-CIDR,192.168.0.0/16
