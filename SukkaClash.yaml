@@ -22,6 +22,7 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
+
   skip-domain:
     - "+.huawei.com"
     - "+.hicloud.com"
@@ -29,7 +30,6 @@ sniffer:
     - "+.push.apple.com"
     - "+.aliyun.com"
     - "+.alicdn.com"
-
 
 tun:
   enable: true
@@ -41,6 +41,10 @@ tun:
     - tcp://any:53
   strict-route: true
   mtu: 1500
+  
+profile:
+  store-selected: true
+  store-fake-ip: true
 
 dns:
   enable: true
@@ -91,6 +95,8 @@ dns:
     # --- 5. 电脑端常用兼容 ---
     - "localhost.ptlogin2.qq.com"
 
+
+
 ### 订阅基础配置 [每天更新一次订阅节点，每 300 秒一次健康检查]
 NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}}
 
@@ -111,13 +117,12 @@ FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼�
 FilterSG: &FilterSG '^(?=.*((?i)🇸🇬|新加坡|狮|\b(SG|Singapore)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\b(US|United States)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 # FilterUK: &FilterUK '^(?=.*((?i)🇬🇧|英国|伦敦|\b(UK|United Kingdom)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-# FilterFR: &FilterFR '^(?=.*((?i)🇫🇷|法国|\b(FR|France)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-# FilterDE: &FilterDE '^(?=.*((?i)🇩🇪|德国|\b(DE|Germany)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-# FilterKR: &FilterKR '^(?=.*((?i)🇰🇷|韩国|韓|首尔|\b(KR|Korea)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 # FilterTW: &FilterTW '^(?=.*((?i)🇹🇼|台湾|\b(TW|Tai|Taiwan)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
+# FilterFR: &FilterFR '^(?=.*((?i)🇫🇷|法国|\b(FR|France)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
+# FilterKR: &FilterKR '^(?=.*((?i)🇰🇷|韩国|韓|首尔|\b(KR|Korea)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
+# FilterDE: &FilterDE '^(?=.*((?i)🇩🇪|德国|\b(DE|Germany)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 # FilterOthers: &FilterOthers '^(?!.*(🇭🇰|HK|Hong|香港|🇹🇼|TW|Taiwan|Wan|🇯🇵|JP|Japan|日本|🇸🇬|SG|Singapore|狮城|🇺🇸|US|United States|America|美国|🇩🇪|DE|Germany|德国|🇬🇧|UK|United Kingdom|英国|🇰🇷|KR|Korea|韩国|韓|🇫🇷|FR|France|法国)).*$'
 # FilterAll: &FilterAll '^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$'
-
 ### 策略组基础配置
 # 手动选择
 Select: &Select {type: select, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', disable-udp: false, hidden: false, include-all: true}
@@ -134,20 +139,20 @@ proxy-groups:
   - {name: Proxy, type: select, proxies: [🇯🇵 JP, 🇭🇰 HK, 🇸🇬 SG, 🇺🇸 US]}
 
    # 应用分组
-  - {name: Telegram, type: fallback, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: AIGC, type: select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
-  - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Download, type: select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Telegram, type: FallBack, proxies: [🇸🇬 SG, Proxy, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: AIGC, type: Select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
+  - {name: Apple, type: Select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Microsoft, type: Select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Download, type: Select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   
   # 自动选择 - 按地区
-  - {name: 🇯🇵 JP, <<: *Auto, filter: *FilterJP}
-  - {name: 🇸🇬 SG, <<: *Auto, filter: *FilterSG}
+  - {name: 🇯🇵 JP, <<: *UrlTest, filter: *FilterJP}
+  - {name: 🇸🇬 SG, <<: *UrlTest, filter: *FilterSG}
   - {name: 🇺🇸 US, <<: *Select, filter: *FilterUS}
   - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
   
   #兜底
-  - {name: Final, type: select, proxies: [DIRECT, Proxy]}
+  - {name: Final, type: Select, proxies: [DIRECT, Proxy]}
   
 ### 规则配置
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: Proxy}
