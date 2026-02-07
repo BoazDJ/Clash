@@ -208,10 +208,10 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/ip/stream.txt
     path: ./rule_set/sukkaw_ruleset/stream_ip.txt
 
-  AI:
-    <<: *RuleSet_classical
-    url: https://github.com/666OS/rules/raw/release/mihomo/domain/AI.mrs
-    path: ./rule_set/sukkaw_ruleset/AI.list
+  OpenAI:
+    <<: *RuleSet*RuleSet_domain
+    url: https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
+    path: ./rule_set/sukkaw_ruleset/OpenAI.list
 
   ai_non_ip:
     <<: *RuleSet_classical
