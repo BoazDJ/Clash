@@ -104,7 +104,7 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 # 订阅合集
 proxy-providers:
   VPN:
-    url: 'https://gist.githubusercontent.com/BoazDJ/ebc26f6752889437ff2170671827fcca/raw/TAg'
+    url: 'https://api.linkedton.com/api/v1/client/subscribe?token=86be8556f990b650ad8bc616988193fd'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
     override:
