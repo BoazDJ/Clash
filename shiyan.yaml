@@ -206,10 +206,10 @@ proxy-groups:
 
   
   # 自动选择 - 按地区
-  - {name: 🇯🇵 JP, <<: *UrlTest, filter: *FilterJP}
-  - {name: 🇸🇬 SG, <<: *UrlTest, filter: *FilterSG}
-  - {name: 🇺🇸 US, <<: *Select, filter: *FilterUS}
-  - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
+  - {name: 🇯🇵 JP, <<: *UrlTest, use: [VPN], filter: *FilterJP}
+  - {name: 🇸🇬 SG, <<: *UrlTest, use: [VPN], filter: *FilterSG}
+  - {name: 🇺🇸 US, <<: *Select, use: [VPN], filter: *FilterUS}
+  - {name: 🇭🇰 HK, <<: *Select, use: [VPN], filter: *FilterHK}
   
   #兜底
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
