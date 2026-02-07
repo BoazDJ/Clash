@@ -209,7 +209,7 @@ rule-providers:
     path: ./rule_set/sukkaw_ruleset/stream_ip.txt
 
   OpenAI:
-    <<: &RuleSet_classical
+    <<: *RuleSet_classical
     url: https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
     path: ./rule_set/sukkaw_ruleset/OpenAI.list
 
