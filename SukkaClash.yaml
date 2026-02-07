@@ -328,7 +328,7 @@ rules:
   - RULE-SET,apple_cn_non_ip,DIRECT
   - RULE-SET,apple_services,Apple
   - RULE-SET,microsoft_non_ip,Microsoft
-  - RULE-SET,AI,AIGC
+  - RULE-SET,OpenAI,AIGC
   - RULE-SET,ai_non_ip,AIGC
   - RULE-SET,global_non_ip,Proxy
   - RULE-SET,domestic_non_ip,DIRECT
