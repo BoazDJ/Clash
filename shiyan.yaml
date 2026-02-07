@@ -106,7 +106,7 @@ proxy-providers:
   VPN:
     url: 'https://gist.githubusercontent.com/BoazDJ/ebc26f6752889437ff2170671827fcca/raw/TAg'
     <<: *NodeParam
-    path: './proxy_provider/providers-2.yaml'
+    path: './proxy_provider/providers-1.yaml'
     override:
       additional-prefix: "[VPN] "
     # 如果还有其他订阅，可以继续添加
