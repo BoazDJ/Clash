@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,weixin.qq.com
 IP-CIDR,182.254.0.0/16,no-resolve
 IP-CIDR,203.205.0.0/16,no-resolve
-IP-SRC,10.0.0.3/32,DIRECT
+IP-SRC,10.0.0.3/32,no-resolve
 
 # 更新时间: 2026/1/30 17:09:46
 # 规则数量：当前共 255 条规则
