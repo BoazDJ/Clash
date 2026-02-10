@@ -268,3 +268,4 @@ IP-CIDR,127.0.0.0/8
 IP-CIDR,16.162.53.229/32
 IP-CIDR,172.16.0.0/12
 IP-CIDR,192.168.0.0/16
+DOMAIN,ipv6.testipv6.cn // Added for: http://ipv6.testipv6.cn/images-nc/bg.gif?&testdomain=testipv6.cn&testname=test_aaaa_img
