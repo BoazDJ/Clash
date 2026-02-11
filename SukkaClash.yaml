@@ -336,6 +336,8 @@ rules:
   - RULE-SET,Proxy,Proxy
   - RULE-SET,Direct,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
+  - GEOSITE,CN,DIRECT
+  - GEOSITE,geolocation-!cn,Proxy
   
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
@@ -344,4 +346,5 @@ rules:
   - RULE-SET,lan_ip,DIRECT
   - RULE-SET,domestic_ip,DIRECT
   - RULE-SET,china_ip,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,Final
