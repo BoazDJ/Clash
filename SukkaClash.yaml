@@ -163,11 +163,6 @@ proxy-groups:
   #兜底
   - {name: Final, type: select, proxies: [DIRECT, Proxy]}
   
-### 规则配置
-RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: Proxy}
-RuleSet_domain: &RuleSet_domain {type: http, behavior: domain, interval: 43200, format: text, proxy: Proxy}
-RuleSet_ipcidr: &RuleSet_ipcidr {type: http, behavior: ipcidr, interval: 43200, format: text, proxy: Proxy}
-
 # 订阅规则
 rule-providers:
   reject_non_ip_no_drop:
@@ -344,8 +339,6 @@ rules:
   - RULE-SET,Proxy,Proxy
   - RULE-SET,Direct,DIRECT
   - RULE-SET,lan_non_ip,DIRECT
-  - GEOSITE,CN,DIRECT
-  - GEOSITE,geolocation-!cn,Proxy
   
   ### IP 类规则
   - RULE-SET,reject_ip,REJECT
@@ -354,5 +347,4 @@ rules:
   - RULE-SET,lan_ip,DIRECT
   - RULE-SET,domestic_ip,DIRECT
   - RULE-SET,china_ip,DIRECT,no-resolve
-  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,Final
