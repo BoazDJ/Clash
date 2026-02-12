@@ -25,6 +25,7 @@ sniffer:
 
   skip-domain:
     # 苹果服务 (解决无法验证服务器身份)
+    - "+.push.apple.com"
     - "+.apple.com"
     - "+.icloud.com"
     - "+.itunes.com"
