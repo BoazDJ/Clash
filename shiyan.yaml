@@ -2,6 +2,7 @@
 mode: rule
 allow-lan: true
 mixed-port: 7893
+udp: true
 bind-address: "*"
 log-level: warning
 ipv6: false
