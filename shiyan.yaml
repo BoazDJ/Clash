@@ -10,7 +10,6 @@ unified-delay: true
 tcp-concurrent: true
 keep-alive-idle: 900
 keep-alive-interval: 30
-global-client-fingerprint: chrome
 
 sniffer:
   enable: true
