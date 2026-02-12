@@ -141,13 +141,13 @@ FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|�
 # FilterAll: &FilterAll '^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)\b|(\d{4}-\d{2}-\d{2}|\d+G)))).*$'
 ### 策略组基础配置
 # 手动选择
-Select: &Select {type: select, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', disable-udp: false, hidden: false, include-all: true}
+Select: &Select {type: select, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, hidden: false, include-all: true}
 # 自动选择 [每 300 秒一次惰性健康检查，容差 50ms，时延超过 2 秒判定为失败，失败 3 次自动触发健康检查]
-UrlTest: &UrlTest {type: url-test, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300, lazy: true, tolerance: 50, timeout: 2000, disable-udp: false, max-failed-times: 3, hidden: false, include-all: true}
+UrlTest: &UrlTest {type: url-test, url: 'http://cp.cloudflare.com/generate_204', interval: 300, lazy: true, tolerance: 50, timeout: 2000, disable-udp: false, max-failed-times: 3, hidden: false, include-all: true}
 # 自动回退 [每 300 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次自动触发健康检查]
-FallBack: &FallBack {type: fallback, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300, lazy: true, timeout: 2000, disable-udp: false, max-failed-times: 3, hidden: false, include-all: true}
+FallBack: &FallBack {type: fallback, url: 'http://cp.cloudflare.com/generate_204', interval: 300, lazy: true, timeout: 2000, disable-udp: false, max-failed-times: 3, hidden: false, include-all: true}
 # 负载均衡 [每 300 秒一次惰性健康检查，时延超过 2 秒判定为失败，失败 3 次则自动触发健康检查]
-LoadBalance: &LoadBalance {type: load-balance, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300, lazy: true, disable-udp: false, strategy: consistent-hashing, timeout: 2000, max-failed-times: 3, hidden: false, include-all: true}
+LoadBalance: &LoadBalance {type: load-balance, url: 'http://cp.cloudflare.com/generate_204', interval: 300, lazy: true, disable-udp: false, strategy: consistent-hashing, timeout: 2000, max-failed-times: 3, hidden: false, include-all: true}
 
 # 策略组
 proxy-groups:
