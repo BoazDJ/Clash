@@ -13,6 +13,7 @@ global-client-fingerprint: chrome
 
 sniffer:
   enable: true
+  parse-pure-ip: true  # 建议开启
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -23,16 +24,28 @@ sniffer:
       ports: [443, 8443]
 
   skip-domain:
+    # 苹果服务 (解决无法验证服务器身份)
+    - "+.apple.com"
+    - "+.icloud.com"
+    - "+.itunes.com"
+    - "+.me.com"
+    - "+.mzstatic.com"
+    # 微软服务 (解决 Hotmail/Outlook 报错)
+    - "+.outlook.com"
+    - "+.hotmail.com"
+    - "+.microsoft.com"
+    - "+.live.com"
+    - "+.office.com"
+    # 国内常用
     - "+.huawei.com"
     - "+.hicloud.com"
-    - "+.dbankcloud.com"
-    - "+.push.apple.com"
     - "+.aliyun.com"
     - "+.alicdn.com"
     - "+.weixin.qq.com"
-    - "+.wechat.com"
-    - "+.qpic.cn"
     - "+.qq.com"
+    - "+.baidu.com"
+    - "Mijia Cloud"
+
 
 tun:
   enable: true
