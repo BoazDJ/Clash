@@ -67,36 +67,29 @@ dns:
     - https://doh.pub/dns-query
     
   fake-ip-filter:
-    # --- 1. 局域网与基础解析 (NAS/Docker 必备) ---
+    - "rule-set:Direct"
+    - "rule-set:apple_cn_non_ip"
+    - "rule-set:microsoft_cdn_non_ip"
+    - "rule-set:lan_non_ip"
+    - "+.tmall.com"
+    - "+.taobao.com"
+    - "+.jd.com"
+    - "+.baidu.com"
+    - "+.qq.com"
+    - "+.ajkdn.com" # 迅雷相关
+    - "+.xunlei.com" 
+    - "+.sandai.net"
+    - "+.hotmail.com"
+    - "+.outlook.com"
+    - "+.microsoft.com"
+    - "msftconnecttest.com"
+    - "msftncsi.com"
+    
+    # 基础保留
     - "+.local"
     - "+.lan"
-    - "+.home.arpa"
-    - "+.localdomain"
-    - "+.in-addr.arpa"
-    - "+.ip6.arpa"
-    - "+.bogon"
-
-    # --- 2. 苹果设备专项 (解决推送和联网检测) ---
-    - "captive.apple.com"      # 苹果联网检测（必留）
-    - "+.push.apple.com"       # 苹果推送服务（必留，解决消息延迟）
-    - "time.apple.com"         # 苹果时间同步
-    - "+.mask.apple-dns.net"   # 苹果私有中继（防止系统设置报错）
-    - "+.mask.icloud.com"      # 苹果私有中继
-
-    # --- 3. 华为与安卓环境 ---
-    - "connectivitycheck.gstatic.com"      # 安卓联网检测
-    - "connectivitycheck.platform.hicloud.com" # 华为设备联网检测
-    - "+.dbankcloud.com"      # 华为云/监控相关
-    - "+.hicloud.com"
-    - "+.huawei.com"
-
-    # --- 4. 监控与智能家居 P2P (奥克斯/监控直连) ---
     - "stun.*"
     - "*.stun.*"
-    - "stun.l.google.com"
-
-    # --- 5. 电脑端常用兼容 ---
-    - "localhost.ptlogin2.qq.com"
 
 ### 订阅基础配置 [每天更新一次订阅节点，每 300 秒一次健康检查]
 NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true, url: 'http://connectivitycheck.platform.hicloud.com/generate_204', interval: 300}}
