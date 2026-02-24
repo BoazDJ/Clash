@@ -1,12 +1,21 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
 # ===========================================================
+DOMAIN,aod.itunes.apple.com
+DOMAIN,api.smoot.apple.cn
+DOMAIN,api.smoot.apple.com
 DOMAIN,aterm.me
+DOMAIN,captive.apple.com
+DOMAIN,configuration.apple.com
 DOMAIN,console.gl-inet.com
 DOMAIN,fnos.net
 DOMAIN,gm.yezi.my
+DOMAIN,gs-loc.apple.com
+DOMAIN,guzzoni.apple.com
 DOMAIN,homerouter.cpe
 DOMAIN,instant.arubanetworks.com
+DOMAIN,mesu.apple.com
 DOMAIN,mobile.hotspot
+DOMAIN,mvod.itunes.apple.com
 DOMAIN,nas-ddns.ccwu.cc
 DOMAIN,ntt.setup
 DOMAIN,p.jisuts.com
@@ -14,7 +23,10 @@ DOMAIN,pi.hole
 DOMAIN,repeater.asus.com
 DOMAIN,router.asus.com
 DOMAIN,setmeup.arubanetworks.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN,streamingaudio.itunes.apple.com
 DOMAIN,unifi
+DOMAIN,xp.apple.com
 DOMAIN-KEYWORD,vip.dytt-
 DOMAIN-SUFFIX,127.0.0.1.sslip.io
 DOMAIN-SUFFIX,127.atlas.skk.moe
@@ -30,6 +42,7 @@ DOMAIN-SUFFIX,cspt.top
 DOMAIN-SUFFIX,csvw.com
 DOMAIN-SUFFIX,ddys.pro
 DOMAIN-SUFFIX,doubao.com
+DOMAIN-SUFFIX,ess.apple.com
 DOMAIN-SUFFIX,fnnas.com
 DOMAIN-SUFFIX,fotile.com
 DOMAIN-SUFFIX,globalsign.com
@@ -43,12 +56,17 @@ DOMAIN-SUFFIX,irouteros.com
 DOMAIN-SUFFIX,kugou.com
 DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,landrop.app
+DOMAIN-SUFFIX,lcdn-locator.apple.com
+DOMAIN-SUFFIX,lcdn-registration.apple.com
 DOMAIN-SUFFIX,local
 DOMAIN-SUFFIX,localdomain
+DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,mihdr.top
 DOMAIN-SUFFIX,mxbc.net
 DOMAIN-SUFFIX,plex.direct
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,push.apple.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,router
 DOMAIN-SUFFIX,routerlogin.com
@@ -91,7 +109,9 @@ IP-CIDR,224.0.0.0/4,no-resolve
 IP-CIDR6,::1/128,no-resolve
 IP-CIDR6,fc00::/7,no-resolve
 IP-CIDR6,fe80::/10,no-resolve
+PROCESS-NAME,netbiosd
+PROCESS-NAME,trustd
 
-# 更新时间: 2026/2/24 23:20:39
+# 更新时间: 2026/2/24 23:37:23
 # 规则数量：当前共 0 条规则
 
