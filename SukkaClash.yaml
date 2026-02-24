@@ -97,7 +97,6 @@ dns:
     - https://1.1.1.1/dns-query   # 保证安全性
 
   fake-ip-filter:
-    - "rule-set:Direct"
     - "rule-set:apple_cn_non_ip"
     - "rule-set:microsoft_cdn_non_ip"
     - "rule-set:lan_non_ip"
