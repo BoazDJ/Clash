@@ -1,12 +1,26 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
 # ===========================================================
+DOMAIN,aterm.me
+DOMAIN,console.gl-inet.com
 DOMAIN,fnos.net
 DOMAIN,gm.yezi.my
+DOMAIN,homerouter.cpe
+DOMAIN,instant.arubanetworks.com
+DOMAIN,mobile.hotspot
 DOMAIN,nas-ddns.ccwu.cc
+DOMAIN,ntt.setup
 DOMAIN,p.jisuts.com
+DOMAIN,pi.hole
+DOMAIN,repeater.asus.com
+DOMAIN,router.asus.com
+DOMAIN,setmeup.arubanetworks.com
+DOMAIN,unifi
 DOMAIN-KEYWORD,vip.dytt-
+DOMAIN-SUFFIX,127.0.0.1.sslip.io
+DOMAIN-SUFFIX,127.atlas.skk.moe
 DOMAIN-SUFFIX,360kan.com
 DOMAIN-SUFFIX,365yg.com
+DOMAIN-SUFFIX,asusrouter.com
 DOMAIN-SUFFIX,bankcomm.com
 DOMAIN-SUFFIX,bbfun.cc
 DOMAIN-SUFFIX,carpt.net
@@ -19,14 +33,26 @@ DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,fnnas.com
 DOMAIN-SUFFIX,fotile.com
 DOMAIN-SUFFIX,globalsign.com
+DOMAIN-SUFFIX,home
+DOMAIN-SUFFIX,home.arpa
+DOMAIN-SUFFIX,huaweimobilewifi.com
+DOMAIN-SUFFIX,in-addr.arpa
+DOMAIN-SUFFIX,internal
 DOMAIN-SUFFIX,ipv4dns.com
 DOMAIN-SUFFIX,irouteros.com
 DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,lan
 DOMAIN-SUFFIX,landrop.app
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,localdomain
 DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,mihdr.top
 DOMAIN-SUFFIX,mxbc.net
+DOMAIN-SUFFIX,plex.direct
 DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,router
+DOMAIN-SUFFIX,routerlogin.com
+DOMAIN-SUFFIX,routerlogin.net
 DOMAIN-SUFFIX,servicewechat.com
 DOMAIN-SUFFIX,sf-express.com
 DOMAIN-SUFFIX,silisili.cc
@@ -35,7 +61,14 @@ DOMAIN-SUFFIX,subaibai.com
 DOMAIN-SUFFIX,svw-volkswagen.com
 DOMAIN-SUFFIX,testipv6.cn
 DOMAIN-SUFFIX,tongyi.com
+DOMAIN-SUFFIX,tplinkap.net
+DOMAIN-SUFFIX,tplinkmodem.net
+DOMAIN-SUFFIX,tplinkplclogin.net
+DOMAIN-SUFFIX,tplinkrepeater.net
+DOMAIN-SUFFIX,tplinkwifi.net
+DOMAIN-SUFFIX,tplogin.cn
 DOMAIN-SUFFIX,ucweb.com
+DOMAIN-SUFFIX,ui.direct
 DOMAIN-SUFFIX,vip.dytt-cinema.com
 DOMAIN-SUFFIX,vip.dytt-video.com
 DOMAIN-SUFFIX,wechat.com
@@ -43,14 +76,22 @@ DOMAIN-SUFFIX,weixin.qq.com
 DOMAIN-SUFFIX,wmys.me
 DOMAIN-SUFFIX,wogg.lol
 DOMAIN-SUFFIX,yiso.fun
+IP-CIDR,0.0.0.0/8,no-resolve
 IP-CIDR,10.0.0.0/8,no-resolve
 IP-CIDR,100.64.0.0/10,no-resolve
 IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
 IP-CIDR,172.16.0.0/12,no-resolve
 IP-CIDR,182.254.0.0/16,no-resolve
+IP-CIDR,192.0.0.0/24,no-resolve
+IP-CIDR,192.0.2.0/24,no-resolve
 IP-CIDR,192.168.0.0/16,no-resolve
 IP-CIDR,203.205.0.0/16,no-resolve
+IP-CIDR,224.0.0.0/4,no-resolve
+IP-CIDR6,::1/128,no-resolve
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
 
-# 更新时间: 2026/2/24 23:06:24
+# 更新时间: 2026/2/24 23:20:39
 # 规则数量：当前共 0 条规则
 
