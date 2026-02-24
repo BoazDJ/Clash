@@ -1,17 +1,22 @@
 # 手动规则: 以下规则优先级最高 不参与规则数量统计
+DOMAIN,fnos.net
 DOMAIN,gm.yezi.my
 DOMAIN,p.jisuts.com
 DOMAIN,vip.dytt-cinema.com
 DOMAIN,vip.dytt-video.com
 DOMAIN-KEYWORD,vip.dytt-
+DOMAIN-SUFFIX,carpt.net
+DOMAIN-SUFFIX,ccwu.cc
+DOMAIN-SUFFIX,cspt.top
 DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,testipv6.cn
 DOMAIN-SUFFIX,wechat.com
 DOMAIN-SUFFIX,weixin.qq.com
 IP-CIDR,182.254.0.0/16,no-resolve
 IP-CIDR,203.205.0.0/16,no-resolve
 
-# 更新时间: 2026/1/30 17:09:46
-# 规则数量：当前共 255 条规则
+# 更新时间: 2026/2/24 22:57:54
+# 规则数量：当前共 252 条规则
 
 DOMAIN,360zy.com
 DOMAIN,admin-oss-xlvip.a.88cdn.com
@@ -27,7 +32,6 @@ DOMAIN,cnlogs.umengcloud.com
 DOMAIN,ddys.pro
 DOMAIN,egxwerif.z1cdn.com
 DOMAIN,feimaoai.site
-DOMAIN,fnos.net
 DOMAIN,grs.dbankcloud.asia
 DOMAIN,grs.dbankcloud.cn
 DOMAIN,guowaiju.com
@@ -65,14 +69,14 @@ DOMAIN,tkotjdbr.z1cdn.com
 DOMAIN,tyejwatd.z1cdn.com
 DOMAIN,ulogs.umengcloud.com
 DOMAIN,vapp.tmuyun.com
-DOMAIN,vres.dsty6.com // Added for: vres.dsty6.com:443
+DOMAIN,vres.dsty6.com
 DOMAIN,wbzbksie.z1cdn.com
 DOMAIN,whpqscwx.z1cdn.com
-DOMAIN,www.steambk.com // Added for: www.steambk.com:443
+DOMAIN,www.steambk.com
 DOMAIN,www.yunwuee.icu
 DOMAIN,wxddizvm.z1cdn.com
 DOMAIN,xfile2.a.88cdn.com
-DOMAIN,yhemby.top//Addedfor:yhemby.top:8096
+DOMAIN,yhemby.top
 DOMAIN,yiso.fun
 DOMAIN,ywsxokgm.z1cdn.com
 DOMAIN-SUFFIX,0kkkkkt.com
@@ -110,6 +114,7 @@ DOMAIN-SUFFIX,bytehwm.com
 DOMAIN-SUFFIX,bytemaimg.com
 DOMAIN-SUFFIX,bytemastatic.com
 DOMAIN-SUFFIX,bytetos.com
+DOMAIN-SUFFIX,ccwu.cc:56789
 DOMAIN-SUFFIX,chaojichaojichanga.com
 DOMAIN-SUFFIX,chenluo.org
 DOMAIN-SUFFIX,cjjd14.com
@@ -159,13 +164,12 @@ DOMAIN-SUFFIX,jdcloud-oss.com
 DOMAIN-SUFFIX,jinritemai.com
 DOMAIN-SUFFIX,jlzj.xyz
 DOMAIN-SUFFIX,jzcbed.xyz
-DOMAIN-SUFFIX,keeflys.com:443
+DOMAIN-SUFFIX,keeflys.com
 DOMAIN-SUFFIX,keke15.com
 DOMAIN-SUFFIX,kekedy.me
 DOMAIN-SUFFIX,kemfsj.com
 DOMAIN-SUFFIX,km2kys.icu
-DOMAIN-SUFFIX,kugou.com/v2/gen?sign=32bfd76ba8b88887b1ad16a876790ac1&appid=3114&s=AQ%2BM04oXcvq2YdZ%2B9GUv62A%2FWC9TCI2HG4%2F%2BxfSrnHYbyWum7pzzWmyM5tEAD7twspJtWne2Poo5k8TjKpoG84KnY0JtVrg2bBivAS1EBBs5tlqet2oq3p%2FG4yhv%2BrSSl88GMGs31cXhXy9RDsiu1wkyIEp%2BRp93kgebsDcQT%2Bk%3D&_t=1752405305
-DOMAIN-SUFFIX,kugou.com/v2/gen?sign=eab7f2b79032be0f27d959f9155a8461&appid=3114&s=OUyTOECxtFzsl4y9yRlW%2BPjAn9gjFXl9iC9YiQUnibPMUz0AfP7DWUvDBorLcY5tgrdSfmkIryxz%2BxF8Yqn%2BDsLtV8NsIZKfDLmUNpqY%2FhnBBhSfIBAi60gcXYLXNWXW%2BTz698pu9a0wc2ReXifplE4e8xUJ0A5fateE0Wh%2FqjU%3D&_t=1752405355
+DOMAIN-SUFFIX,kugou.com
 DOMAIN-SUFFIX,kuiniuca.com
 DOMAIN-SUFFIX,kvod10.com
 DOMAIN-SUFFIX,kvod14.com
@@ -183,7 +187,6 @@ DOMAIN-SUFFIX,mcydh.com
 DOMAIN-SUFFIX,mediav.com
 DOMAIN-SUFFIX,medproad.com
 DOMAIN-SUFFIX,meituan.net
-DOMAIN-SUFFIX,meituan.net:443
 DOMAIN-SUFFIX,mentamob.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-SUFFIX,mitotv.com
@@ -208,7 +211,6 @@ DOMAIN-SUFFIX,qiezibenpao.com
 DOMAIN-SUFFIX,qishui.com
 DOMAIN-SUFFIX,qtaeixd.com
 DOMAIN-SUFFIX,qznovelvod.com
-DOMAIN-SUFFIX,rongjuwh.cn:443
 DOMAIN-SUFFIX,rryms.cc
 DOMAIN-SUFFIX,rycjapi.com
 DOMAIN-SUFFIX,sanhao1.vip
@@ -268,4 +270,3 @@ IP-CIDR,127.0.0.0/8
 IP-CIDR,16.162.53.229/32
 IP-CIDR,172.16.0.0/12
 IP-CIDR,192.168.0.0/16
-DOMAIN,ipv6.testipv6.cn // Added for: http://ipv6.testipv6.cn/images-nc/bg.gif?&testdomain=testipv6.cn&testname=test_aaaa_img
