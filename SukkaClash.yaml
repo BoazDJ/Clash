@@ -82,7 +82,7 @@ dns:
       - https://223.5.5.5/dns-query
       - https://doh.pub/dns-query
     # 针对你配置中特定的直连规则集，手动指定国内解析
-    "rule-set:apple_cdn,apple_cn_non_ip,microsoft_cdn_non_ip,domestic_non_ip,direct_non_ip,lan_non_ip,Direct":
+    "rule-set:apple_cdn,apple_cn_non_ip,microsoft_cdn_non_ip,domestic_non_ip,direct_non_ip,lan_non_ip":
       - https://223.5.5.5/dns-query
       - https://doh.pub/dns-query
 
