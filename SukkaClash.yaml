@@ -67,27 +67,35 @@ dns:
   ipv6: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  respect-rules: true
+  respect-rules: true       # 必须开启，确保 DNS 请求遵循分流规则
   prefer-h3: true
+  
+  # 1. 默认 DNS：仅用于解析 DOH 服务的域名 IP
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
+  
+  # 2. 核心分流：精确控制不同域名的解析去向
+  nameserver-policy:
+    # 局域网、国内主流网站、Apple/微软 CDN 走国内公共 DNS
+    "geosite:cn,private":
+      - https://223.5.5.5/dns-query
+      - https://doh.pub/dns-query
+    # 针对你配置中特定的直连规则集，手动指定国内解析
+    "rule-set:apple_cdn,apple_cn_non_ip,microsoft_cdn_non_ip,domestic_non_ip,direct_non_ip,lan_non_ip,Direct":
+      - https://223.5.5.5/dns-query
+      - https://doh.pub/dns-query
+
+  # 3. 兜底 DNS：匹配不到 policy 的（基本都是海外/墙外域名）统统走加密 DNS
   nameserver:
-    - https://223.5.5.5/dns-query
-    - https://doh.pub/dns-query
-  fallback:
-    - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32 
-  proxy-server-nameserver:
-    - https://223.5.5.5/dns-query 
     - https://1.1.1.1/dns-query
-    
+  
+  # 4. 代理节点解析：防止解析节点域名时被运营商嗅探
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query # 保证连通性
+    - https://1.1.1.1/dns-query   # 保证安全性
+
   fake-ip-filter:
     - "rule-set:Direct"
     - "rule-set:apple_cn_non_ip"
@@ -98,7 +106,7 @@ dns:
     - "+.jd.com"
     - "+.baidu.com"
     - "+.qq.com"
-    - "+.ajkdn.com" # 迅雷相关
+    - "+.ajkdn.com"
     - "+.xunlei.com" 
     - "+.sandai.net"
     - "+.hotmail.com"
@@ -106,6 +114,10 @@ dns:
     - "+.microsoft.com"
     - "msftconnecttest.com"
     - "msftncsi.com"
+    - "+.local"
+    - "+.lan"
+    - "stun.*"
+    - "*.stun.*"
     
     # 基础保留
     - "+.local"
