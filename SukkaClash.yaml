@@ -80,6 +80,7 @@ dns:
     - https://doh.pub/dns-query
 
   fake-ip-filter:
+    - "rule-set:Direct"
     - "rule-set:apple_cn_non_ip"
     - "rule-set:microsoft_cdn_non_ip"
     - "rule-set:lan_non_ip"
