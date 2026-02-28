@@ -215,10 +215,10 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/ip/stream.txt
     path: ./rule_set/sukkaw_ruleset/stream_ip.txt
 
-  OpenAI:
+  AI:
     <<: *RuleSet_classical
-    url: https://raw.githubusercontent.com/EAlyce/conf/refs/heads/main/Rule/OpenAI.list
-    path: ./rule_set/sukkaw_ruleset/OpenAI.list
+    url: https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list
+    path: ./rule_set/sukkaw_ruleset/AI.list
 
   ai_non_ip:
     <<: *RuleSet_classical
@@ -335,7 +335,7 @@ rules:
   - RULE-SET,apple_cn_non_ip,DIRECT
   - RULE-SET,apple_services,Apple
   - RULE-SET,microsoft_non_ip,Microsoft
-  - RULE-SET,OpenAI,AIGC
+  - RULE-SET,AI,AIGC
   - RULE-SET,ai_non_ip,AIGC
   - RULE-SET,global_non_ip,Proxy
   - RULE-SET,domestic_non_ip,DIRECT
