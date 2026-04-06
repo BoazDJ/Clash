@@ -130,12 +130,12 @@ NodeParam: &NodeParam {type: http, interval: 86400, health-check: {enable: true,
 
 # 订阅合集
 proxy-providers:
-  订阅一:
+  VPN:
     url: 'https://api.linkedton.com/api/v1/client/subscribe?token=86be8556f990b650ad8bc616988193fd'
     <<: *NodeParam
     path: './proxy_provider/providers-1.yaml'
     override:
-      additional-prefix: "[订阅一] "
+      additional-prefix: "[VPN] "
     # 如果还有其他订阅，可以继续添加
 
 # Geo 数据库下载地址
