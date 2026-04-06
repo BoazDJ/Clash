@@ -149,7 +149,8 @@ geox-url:
 # 节点筛选
 # 按地区筛选
 FilterHK: &FilterHK '^(?=.*((?i)🇭🇰|香港|\b(HK|Hong)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
-FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|\b(JP|Japan)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
+FilterJP: &FilterJP '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|\b(JP|Japan)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|TS)).*$'
+FilterJPAI: &FilterJPAI '^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|\b(JP|Japan)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点|Hneko)).*$'
 FilterSG: &FilterSG '^(?=.*((?i)🇸🇬|新加坡|狮|\b(SG|Singapore)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 FilterUS: &FilterUS '^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|\b(US|United States)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
 # FilterUK: &FilterUK '^(?=.*((?i)🇬🇧|英国|伦敦|\b(UK|United Kingdom)(\d+)?\b))(?!.*((?i)回国|校园|网站|地址|剩余|过期|时间|有效|网址|禁止|邮箱|发布|客服|订阅|节点)).*$'
@@ -176,13 +177,14 @@ proxy-groups:
 
    # 应用分组
   - {name: Telegram, type: fallback, proxies: [Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: AIGC, type: select, proxies: [Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
+  - {name: AIGC, type: select, proxies: [🇯🇵 JPAI, Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
   - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: Download, type: select, proxies: [DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   
   # 自动选择 - 按地区
   - {name: 🇯🇵 JP, <<: *UrlTest, filter: *FilterJP}
+  - {name: 🇯🇵 JPAI, <<: *UrlTest, filter: *FilterJPAI}
   - {name: 🇸🇬 SG, <<: *UrlTest, filter: *FilterSG}
   - {name: 🇺🇸 US, <<: *Select, filter: *FilterUS}
   - {name: 🇭🇰 HK, <<: *Select, filter: *FilterHK}
