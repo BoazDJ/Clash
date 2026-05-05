@@ -181,7 +181,7 @@ proxy-groups:
   - {name: AIGC, type: select, proxies: [🇯🇵 JP-AI, Proxy, 🇺🇸 US, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK]}
   - {name: Apple, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   - {name: Microsoft, type: select, proxies: [Proxy, DIRECT, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
-  - {name: Download, type: select, proxies: [DIRECT, VPN, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
+  - {name: Download, type: fallback, proxies: [VPN, DIRECT, Proxy, 🇸🇬 SG, 🇯🇵 JP, 🇭🇰 HK, 🇺🇸 US]}
   
   # 按地区
   - {name: 🇯🇵 JP, <<: *UrlTest, filter: *FilterJP}
